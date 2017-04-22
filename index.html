@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="codeland-colors.js"></script>
+</head>
+<body>
+	<a-scene>
+    <a-assets>
+				<img id="logo" src="codeland-logo.png">
+		</a-assets>
+    <a-sky codeland-colors></a-sky>
+    <a-box width="4" height="10" depth="2" position="-10 2 -5" rotation="0 0 45" scale="2 .5 3" src="#logo">
+				<a-animation attribute="rotation" begin="click" to="0 360 0"></a-animation>
+		</a-box>
+    <a-camera position="0 1.8 0">
+				<a-cursor color="rgb(23, 131, 198)"></a-cursor>
+		</a-camera>
+	</a-scene>
+</body>
+</html>
